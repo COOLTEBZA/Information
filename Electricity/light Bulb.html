@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head> 
+    <body> 
+
+
+<style>
+.red{
+background-color: red;
+}
+.black{
+background-color: black;
+}
+.yellow{
+background-color: yellow;
+color: red;
+}
+.grey{
+background-color: grey;
+color: white;
+}
+.sizeswitch{
+height: 20px;
+width: 20px;
+border-radius: 50px;
+color: white;
+}
+.sizebulb{
+height: 20px;
+width: 20px;
+border-radius: 50px;
+}
+
+.wirelength{
+height: 20px;
+width: 220px;
+background-color:  rgba(255, 87, 34, 0.88);
+box-shadow: inset 0px -4px 4px 1px brown;
+}
+</style>
+
+<div id="bulbLight" class="" >bulb/light(s)</div>
+<div id="wireCurrentFlow"  class="wirelength" >wire/cable/conductor(s)</div>
+<div id="powerStored"  class="" >power/energy(battery/Electricity)</div>
+<div id="reducedCurrentFlowResistor"  class="" >resistor(s)</div>
+<div id="ScreenSet"  class="" >Screen(s)</div>
+<div id="diode"  class="" >diode(s)</div>
+<div id="" ></div>
+<div id="" ></div>
+
+
+
+
+
+
+<button onclick="switchOn()">Switch On<span class="red sizeswitch">(0)</span></button>
+<button onclick="switchOff()">Switch Off<span class="black sizeswitch">(I)</span></button>
+
+<table border="1" class="tablees2-container">
+<tr><th colspan="5"> Cooltebza bulb/Light:</th></tr>
+
+
+
+
+
+
+<tr><th colspan="2" rowspan="2"></th><th></th></tr>
+<tr><th>bulb/light(s)</th><th></th></tr>
+<tr><th>wire/cable/conductor(s)</th><th></th></tr>
+<tr><th>power/energy(battery/Electricity)</th><th></th></tr>
+<tr><th>resistor(s)</th><th></th></tr>
+<tr><th>switch(s)</th><th></th></tr>
+<tr><th>diode(s)</th><th></th></tr>
+<tr><th>Plug(s)</th><th></th></tr>
+<tr><th>charger(s)</th><th></th></tr>
+<tr><th>tranformer(s)</th><th></th></tr>
+<tr><th>generator(s)</th><th></th></tr>
+<tr><th>gravity(s)</th><th></th></tr>
+<tr><th>drag absorb/holding pressure/heat resistance/drop absorb/last term guarantee(s)</th><th></th></tr>
+<thead></table>
+
+<script>
+
+
+var m = document.getElementById("bulbLight").innerHTML;
+
+if( m === "bulb/light(s)"){
+var bulbLightError = document.getElementById("bulbLight")
+bulbLightError.innerHTML = "function Error found one of your system not working or NOT connected corrently";
+}else{
+var bulbLightConnected = document.getElementById("bulbLight")
+bulbLightConnected.innerHTML = "successfully connected corrently";
+
+}
+
+
+function switchOn(){
+var onCurrent = "on";
+//document.getElementById("screen").value =
+document.getElementById("ScreenSet").innerHTML = onCurrent;
+callCurrent()
+}
+function switchOff(){
+var offCurrent = "off";
+//document.getElementById("screen").value =
+var bulbLight = document.getElementById("ScreenSet").innerHTML = offCurrent;
+callCurrent()
+}
+/*
+next update educational tool
+watts/volts/amps
+measurements{weight/height/width}
+var wireTypes = ['copper', 'aluminum'];
+var wireConnections = ['wire connected', 'wire disconnected'];
+var wireRequiredCount = ['1st wire', '2nd wire '];
+var wireSize = ['mm', 'cm','m','km'];
+var wireShape = ['Square', 'Round','Flat','Curve','Circle','Triangle','Rectangle'];
+var wireMass = ['ml', 'l','g','mg','kg'];
+var currentFlowTypes = ['distance', 'per', 'time'];
+var overload = ['distance', 'per', 'time'];
+var wireColor = ['blue', 'green', 'red'];
+var circuitBoardColor = ['blue', 'green', 'red'];
+var circuitBoardRequiredCount = [];
+var circuitBoardSize = [];
+var circuitBoardMass = [];
+var circuitBoardType = [];
+var circuitBoardHoles = [];
+var wallPlugRequiredCount = [];
+var circuitBoardPlugRequiredCount = [];
+var transformer = [];
+var generator = [];
+var distributionBox = [];
+var aiSystem = [];
+
+
+*/
+
+
+
+function callCurrent(){
+var screenSet = document.getElementById("ScreenSet").innerHTML;
+if (screenSet == "on"){
+var bulbLightOn = document.getElementById("bulbLight")
+bulbLightOn.innerHTML = "on";
+bulbLightOn.className = "yellow sizebulb";
+}else if(screenSet == "off")
+{
+var bulbLightOff = document.getElementById("bulbLight")
+bulbLightOff.innerHTML = "off";
+bulbLightOff.className = "grey sizebulb";
+}
+}
+
+
+</script>
