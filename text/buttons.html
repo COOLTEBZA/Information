@@ -1,0 +1,112 @@
+<!DOCTYPE html> 
+
+<html> 
+
+  
+
+<head> 
+
+    <title> 
+
+        Cooltebza - How to count all child elements of a 
+
+        particular element using JavaScript? 
+
+    </title> 
+	<style id="buttons">
+	   
+	</style>
+<link type="text/css" rel="stylesheet" href="buttons.css">
+</head> 
+
+
+
+<body> 
+
+    <h1 style="color:green">Cooltebza</h1> 
+
+  
+
+    <h3> 
+
+       buttons Colours<br> 
+
+
+    </h3> 
+
+  
+
+    <h5>Count all child Colours of <ul> buttons</h5> 
+
+    <ul id="parentID"> 
+		
+        <button class="btnBgColor_1" id="btnBgColor_1" >Yellow</button>
+		<button class="btnBgColor_2" id="btnBgColor_2" >White</button>
+		<button class="btnBgColor_3" id="btnBgColor_3" >Teal</button>
+		<button class="btnBgColor_4" id="btnBgColor_4" >Silver</button>
+		<button class="btnBgColor_5" id="btnBgColor_5" >Red</button>
+		<button class="btnBgColor_6" id="btnBgColor_6" >Purple</button>
+		<button class="btnBgColor_7" id="btnBgColor_7" >Olive</button>
+		<button class="btnBgColor_8" id="btnBgColor_8" >Navy</button>
+		<button class="btnBgColor_9" id="btnBgColor_9" >Maroon</button>
+		<button class="btnBgColor_10" id="btnBgColor_10" >Lime</button>
+		<button class="btnBgColor_11" id="btnBgColor_11" >Green</button>
+		<button class="btnBgColor_12" id="btnBgColor_12" >Gray</button>
+		<button class="btnBgColor_13" id="btnBgColor_13" >Fuchsia</button>
+		<button class="btnBgColor_14" id="btnBgColor_14" >Blue</button>
+		<button class="btnBgColor_15" id="btnBgColor_15" >Black</button>
+		<button class="btnBgColor_16" id="btnBgColor_16" >Aqua</button>
+		<button class="btnBgColor_17" id="btnBgColor_17" >brown</button>
+		<button class="btnBgColor_18" id="btnBgColor_18" >gold</button>
+		<button class="btnBgColor_19" id="btnBgColor_19" >gray</button>
+		<button class="btnBgColor_20" id="btnBgColor_20" >orange</button>	
+		<button class="btnBgColor_21" id="btnBgColor_21" >transparent</button>
+		<button class="btnBgColor_22" id="btnBgColor_22" >default</button>
+
+    </ul> 
+
+  
+
+    <button onclick="myGeeks()"> 
+
+        Click Here! 
+
+    </button> 
+
+  
+
+    <h5 id="GFG"></h5> 
+<button class="HtSize_1" >HtSize_1</button>
+<button class="HtSize_2" >HtSize_2</button>
+<button class="HtSize_3" >HtSize_3</button>
+<button class="HtSize_4" >HtSize_4</button>
+<button class="HtSize_5" >HtSize_5</button>
+<button class="HtSize_6" >HtSize_6</button>
+<button class="HtSize_7" >HtSize_7</button>
+<button class="HtSize_8" >HtSize_8</button>
+<button class="HtSize_9" >HtSize_9</button>
+<button class="HtSize_10" >HtSize_10</button>
+  
+
+    <script> 
+
+        // This function count the child elements 
+
+        function myGeeks() { 
+
+            var count = document.getElementById("parentID").childElementCount; 
+			document.getElementById("GFG").innerHTML = "Total Number of Colours: " + count; 
+
+        } 
+
+    </script> 
+
+</body> 
+
+  
+
+</html> 
+
+
+<button type="button" id="btn1" class="btn btn_colour_1 btn_size_12" style="width:100%;"></button>
+
