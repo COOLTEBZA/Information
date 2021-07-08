@@ -3,15 +3,22 @@
 <head>
 <style>
 
-   .disabled {
+   .enabled {
       background: black;
    }
-   .enabled {
+   .disabled {
+      background: white;
+   }
+	.Dark_Mode{
+      background: #0d1117;
+	  color: white;
+   }
+	.Light_Mode{
       background: white;
    }
 </style>
 </head>
-<body>
+<body id="theme" class="Light_Mode">
 <label for="red">
 <input type="checkbox" id="red" class="enabled" /><label id="coolId_1">Dark Mode</label>
 </label>
@@ -29,8 +36,9 @@ for(i = 0; i < 0; i++){
 			document.getElementById(coolId[i]).innerHTML = "elements disabled";
 				}
 */
+
         function myGeeks() { 
-			let coolId = ["GFG", "red","coolId_1","parentID"];
+			let coolId = ["theme", "red","coolId_1","parentID"];
             let enabledOne = document.getElementById(coolId[3]); 
 			let themeChanger = document.getElementById(coolId[1]); 
 			
@@ -39,14 +47,14 @@ for(i = 0; i < 0; i++){
 			enabledOne.removeAttribute("disabled");
 			themeChanger.removeAttribute("checked");
 			enabledOne.className= "enabled";
-			document.getElementById(coolId[0]).innerHTML = "elements enabled"; 
+			document.getElementById(coolId[0]).className = "Light_Mode"; 
 			document.getElementById(coolId[2]).innerHTML = " Light Mode"; 
 			}else if(enabledOne.className === "enabled"){
 			enabledOne.setAttribute("disabled", "true");
 			themeChanger.setAttribute("checked", "true");
 			enabledOne.className= "disabled";
-			document.getElementById(coolId[0]).innerHTML = "elements disabled";
-				document.getElementById(coolId[2]).innerHTML = " Dark Mode"; 
+			document.getElementById(coolId[0]).className = "Dark_Mode";
+			document.getElementById(coolId[2]).innerHTML = " Dark Mode"; 
 			}
 
         }
